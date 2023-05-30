@@ -1,0 +1,63 @@
+.profes-title {
+    background-image: url(../assets/fondoIndex.jpg);
+        text-align: center;
+        color: #fff;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 6.5rem 0;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+}
+
+.profes-container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 4rem;
+
+    .profesor {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 4rem 0;
+
+        img {
+            box-shadow: 2px 4px 15px 0 #000;
+        }
+
+        .datos-profesor {
+
+            h6 {
+                font-size: 3rem;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 1.5rem;
+            }
+
+            a {
+                display: inline-block;
+                margin: 1rem 0;
+                font-size: 25px;
+                background: linear-gradient(90deg, #4553d0 0%, #1CB5E0 100%);
+                padding: .5rem;
+                border-radius: 5px;
+                color: #000000;
+            }
+
+            a:hover {
+                transform: scale(1.1);
+                transition-duration: .1s;
+                background-color: #fff;
+            }
+        }
+    }
+}

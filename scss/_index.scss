@@ -1,0 +1,86 @@
+.contenedor-inicio {
+
+    .contenedor-titulo {
+        background-image: url(../assets/fondoIndex.jpg);
+        text-align: center;
+        color: #fff;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 8rem 0;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+        h1 {
+            font-size: 3.5rem;
+        }
+
+        p {
+            font-size: 2rem;
+        }
+    }
+
+    .contenedor-planes {
+        padding: 2rem 0;
+        display: flex;
+        justify-content: space-around;
+
+        .plan-total,
+        .plan-plus {
+            background-color: #fff;
+            padding: 2rem 0;
+            border-radius: 10px;
+            
+            h2 {
+                font-size: 4rem;
+                text-align: center;
+            }
+
+            ul {
+                li {
+                    font-size: 1.5rem;
+                }
+                li::before {
+                    content: '✔    ';
+                }
+            }
+
+            #ultimoItem::before {
+                content: 'X   ';
+            }
+
+            a {
+                background: linear-gradient(90deg, #4553d0 0%, #1CB5E0 100%);
+                color: #000000;
+                display: block;
+                text-align: center;
+                margin: 1rem 10rem 0 10rem;
+                padding: .7rem;
+                border-radius: 5px;
+                font-weight: bold;
+            }
+
+            a:hover {
+                background-color: #0077B6;
+                transform: scale(1.05);
+                transition-duration: .1s;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,65 @@
+.footer-general {
+    background: linear-gradient(90deg, #4553d0 0%, #1CB5E0 100%);
+    margin-top: 5rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: min-content;
+    grid-template-areas: 
+    "listas derechos derechos redes";
+
+    .footer-redes {
+        grid-area: redes;
+        text-align: center;
+        align-self: end;
+        /* margin-bottom: 10px; */
+
+        .footer-redes__iconos {
+            a{
+                img {
+                    margin: 5px 10px 0 10px;
+                    width: 30px;
+                }
+
+                img:hover {
+                    transform: scale(1.1);
+                    transition-duration: .1s;
+                }
+            }
+        }
+    }
+    .footer-derechos {
+        grid-area: derechos;
+        text-align: center;
+
+        img {
+            width: 120px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .footer-listas {
+        grid-area: listas;
+        display: flex;
+        justify-content: space-around;
+        align-items: end;
+        margin-left: 2rem;
+        width: 100%;
+
+        ul{
+
+            li{
+                margin: 5px 0;
+                font-size: 12px;
+
+                a{
+                    color: #000000;
+                }
+            }
+
+            li:hover {
+                transform: scale(1.01);
+            }
+        }
+    }
+}
